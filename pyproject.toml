@@ -1,7 +1,20 @@
 [project]
-name = "cl16"
+name = "cashlog"
 version = "0.1.0"
-description = "Add your description here"
+description = "轻量化本地记账/待办CLI工具"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "sqlalchemy>=2.0.0",
+    "rich>=14.0.0",
+    "click>=8.0.0",
+    "pytest>=9.0.1",
+    "pytest-cov>=7.0.0"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

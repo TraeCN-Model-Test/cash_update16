@@ -3,6 +3,7 @@ import click
 from cashlog.cli.transaction_cli import transaction
 from cashlog.cli.todo_cli import todo
 from cashlog.cli.report_cli import report
+from cashlog.cli.data_cli import data
 
 
 @click.group()
@@ -20,6 +21,7 @@ def cli():
 cli.add_command(transaction)
 cli.add_command(todo)
 cli.add_command(report)
+cli.add_command(data)
 
 
 if __name__ == "__main__":
